@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CBQ_Entities">
+    <EntitySetMapping Name="Admin_tbl">
+      <EntityTypeMapping TypeName="Model.Admin_tbl">
+        <MappingFragment StoreEntitySet="Admin_tbl">
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="User_Num" ColumnName="User_Num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="Model.Booking">
+        <MappingFragment StoreEntitySet="Bookings">
+          <ScalarProperty Name="Hair_Makeup_ID" ColumnName="Hair_Makeup_ID" />
+          <ScalarProperty Name="Type_Of_Hairstyle" ColumnName="Type_Of_Hairstyle" />
+          <ScalarProperty Name="Type_Of_Makeup" ColumnName="Type_Of_Makeup" />
+          <ScalarProperty Name="Date_Of_Appointment" ColumnName="Date_Of_Appointment" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Register_login">
+      <EntityTypeMapping TypeName="Model.Register_login">
+        <MappingFragment StoreEntitySet="Register_login">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile_Number" ColumnName="Mobile_Number" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
